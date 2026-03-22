@@ -11,11 +11,33 @@ export default function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    // Client-side only for now
+    setSubmitting(true);
+    setError("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (!response.ok) {
+        setError(result?.error || "Unable to send your message right now.");
+        return;
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError("Unable to send your message right now.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -83,7 +105,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-text-primary">Email</h4>
-                    <p className="text-sm text-text-secondary mt-0.5">contact@sentrahexct.in</p>
+                    <p className="text-sm text-text-secondary mt-0.5">sales@sentrahexct.in</p>
                   </div>
                 </div>
 
@@ -160,6 +182,11 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="relative space-y-6">
+                    {error ? (
+                      <div className="rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700">
+                        {error}
+                      </div>
+                    ) : null}
                     <div className="grid gap-6 sm:grid-cols-2">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-2">
@@ -222,8 +249,8 @@ export default function ContactPage() {
                         placeholder="Tell us about your security needs..."
                       />
                     </div>
-                    <button type="submit" className="btn-primary w-full justify-center text-base !py-4">
-                      Send Message
+                    <button type="submit" disabled={submitting} className="btn-primary w-full justify-center text-base !py-4 disabled:opacity-70">
+                      {submitting ? "Sending..." : "Send Message"}
                       <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                       </svg>
