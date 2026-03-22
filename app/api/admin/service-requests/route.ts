@@ -1,5 +1,7 @@
 import { ObjectId } from "mongodb";
 import { NextResponse } from "next/server";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
 import { getDb } from "@/lib/mongodb";
 
 const VALID_STATUS = [
@@ -13,6 +15,11 @@ const VALID_STATUS = [
 
 export async function GET() {
   try {
+    const session = await getServerSession(authOptions);
+    if (!session?.user) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     const db = await getDb();
     const serviceRequests = await db
       .collection("serviceRequests")
@@ -32,6 +39,11 @@ export async function GET() {
 
 export async function PATCH(request: Request) {
   try {
+    const session = await getServerSession(authOptions);
+    if (!session?.user) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     const body = await request.json();
     const id = String(body?.id || "").trim();
     const status = String(body?.status || "").trim();

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { signOut } from "next-auth/react";
 
 type Lead = {
   _id: string;
@@ -43,6 +44,11 @@ export default function AdminLeadsPage() {
         fetch("/api/admin/leads", { cache: "no-store" }),
         fetch("/api/admin/service-requests", { cache: "no-store" }),
       ]);
+
+      if (leadsRes.status === 401 || requestsRes.status === 401) {
+        window.location.href = "/admin/login?callbackUrl=/admin/leads";
+        return;
+      }
 
       const leadsData = await leadsRes.json();
       const requestsData = await requestsRes.json();
@@ -113,6 +119,12 @@ export default function AdminLeadsPage() {
           <p className="mt-3 text-text-secondary">
             Manage contact leads and service requests with a status-based workflow.
           </p>
+          <button
+            onClick={() => void signOut({ callbackUrl: "/admin/login" })}
+            className="btn-outline mt-5"
+          >
+            Sign Out
+          </button>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-8">

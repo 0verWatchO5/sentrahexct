@@ -89,6 +89,9 @@ export default function ServicesPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
+              <Link href="/services/request" className="btn-outline ml-3">
+                Start Service Request
+              </Link>
             </div>
 
             {/* Visual Card */}
@@ -185,6 +188,9 @@ export default function ServicesPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
+              <Link href="/services/request" className="btn-outline ml-3">
+                Start Service Request
+              </Link>
             </div>
           </div>
 
@@ -231,6 +237,9 @@ export default function ServicesPage() {
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
+              </Link>
+              <Link href="/services/request" className="btn-outline ml-3">
+                Start Service Request
               </Link>
             </div>
 
@@ -343,6 +352,9 @@ export default function ServicesPage() {
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
+          </Link>
+          <Link href="/services/request" className="btn-outline text-lg !py-4 !px-8 mt-4 inline-flex">
+            Submit Service Scope
           </Link>
         </div>
       </section>
