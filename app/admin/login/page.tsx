@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { signIn } from "next-auth/react";
 import { useState } from "react";
 import type { FormEvent } from "react";
@@ -96,12 +95,6 @@ export default function AdminLoginPage() {
             </button>
           </form>
 
-          <p className="mt-6 text-sm text-text-secondary">
-            No user yet?{" "}
-            <Link href="/admin/register" className="text-accent-cyan font-medium">
-              Create admin account
-            </Link>
-          </p>
         </div>
       </div>
     </section>
