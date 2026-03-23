@@ -208,7 +208,7 @@ export default function ServicesPage() {
 
           <hr className="border-border" />
 
-          {/* ── 3. Cybersecurity Training ─────────── */}
+          {/* ── 3. Cybersecurity Training ───────────
           <div id="training" className="scroll-mt-24 grid gap-12 items-center lg:grid-cols-2">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-accent-cyan/20 bg-accent-cyan/5 px-4 py-1.5 mb-5">
@@ -256,7 +256,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Visual Card */}
-            <div className="rounded-2xl border border-border bg-surface p-8 relative overflow-hidden">
+            {/* <div className="rounded-2xl border border-border bg-surface p-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-accent-cyan/5 to-transparent rounded-bl-full" />
               <div className="relative flex flex-col items-center text-center py-8">
                 <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-accent-cyan/10 to-accent-green/10 animate-glow-pulse">
@@ -282,16 +282,16 @@ export default function ServicesPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <hr className="border-border" />
+          {/* <hr className="border-border" /> */}
 
           {/* ── 4. Website Solutions ─────────────── */}
           <div id="websites" className="scroll-mt-24 grid gap-12 items-center lg:grid-cols-2">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-accent-green/20 bg-accent-green/5 px-4 py-1.5 mb-5">
                 <span className="h-2 w-2 rounded-full bg-accent-green" />
-                <span className="text-xs font-medium text-accent-green">Service 04</span>
+                <span className="text-xs font-medium text-accent-green">Service 03</span>
               </div>
               <h2 className="text-3xl font-bold text-text-primary sm:text-4xl mb-5">
                 Website
