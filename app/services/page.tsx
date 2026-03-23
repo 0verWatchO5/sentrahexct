@@ -151,7 +151,8 @@ export default function ServicesPage() {
                 <h3 className="text-xl font-bold text-text-primary mb-2">Compliance Framework</h3>
                 <p className="text-sm text-text-muted mb-6">Audit & Assessment</p>
                 <div className="flex flex-wrap justify-center gap-2">
-                  {["ISO 27001", "DPDPA", "SOC 2", "GDPR", "HIPAA"].map((tag) => (
+                  {["ISO 27001", "DPDPA"].map((tag) => (
+                    // "SOC 2", "GDPR", "HIPAA"
                     <span key={tag} className="rounded-full border border-accent-green/20 bg-accent-green/5 px-3 py-1 text-xs font-medium text-accent-green">
                       {tag}
                     </span>
