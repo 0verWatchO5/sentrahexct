@@ -1,19 +1,29 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us  SentraHex CyberTech",
+  title: "About Us | SentraHex CyberTech",
   description:
     "Learn about SentraHex CyberTech's mission to redefine cybersecurity from India with intelligent, kernel-level defense systems.",
+  openGraph: {
+    title: "About Us | SentraHex CyberTech",
+    description:
+      "Discover our mission: redefining cybersecurity from India with kernel-level defense systems.",
+    url: "https://sentrahexct.in/about",
+    type: "website",
+  },
+  canonical: "https://sentrahexct.in/about",
 };
 
 export default function AboutPage() {
   return (
     <>
       {/* ── Hero ──────────────────────────────────── */}
-      <section className="relative hero-gradient overflow-hidden pt-32 pb-24 -mb-px">
+      <section className="relative hero-gradient overflow-hidden pt-32 pb-24 -mb-px min-h-[70vh] flex items-center">
         <div className="absolute inset-0">
-          <div className="absolute top-20 right-20 w-96 h-96 rounded-full bg-accent-cyan/5 blur-3xl" />
-          <div className="absolute bottom-0 left-10 w-72 h-72 rounded-full bg-accent-green/5 blur-3xl" />
+          <div className="absolute top-20 right-20 w-96 h-96 rounded-full bg-accent-cyan/5 blur-3xl animate-float" />
+          <div className="absolute bottom-0 left-10 w-72 h-72 rounded-full bg-accent-green/5 blur-3xl animate-float delay-300" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-white/[0.04]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-white/[0.04]" />
           <div className="absolute inset-0" style={{
             backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0)`,
             backgroundSize: '40px 40px'
@@ -21,15 +31,15 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-6">
           <div className="max-w-3xl">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-accent-cyan mb-4">
+            <span className="animate-fade-in-up inline-block text-xs font-semibold uppercase tracking-[0.2em] text-accent-cyan mb-4" style={{ animationFillMode: 'backwards' }}>
               About SentraHex
             </span>
-            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight">
+            <h1 className="animate-fade-in-up delay-100 text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight" style={{ animationFillMode: 'backwards' }}>
               Redefining Digital
               <br />
               <span className="gradient-text">Defense from India</span>
             </h1>
-            <p className="mt-6 text-lg text-white/60 max-w-xl leading-relaxed">
+            <p className="animate-fade-in-up delay-200 mt-6 text-lg text-white/60 max-w-xl leading-relaxed" style={{ animationFillMode: 'backwards' }}>
               On a mission to make cybersecurity personal, proactive, and as fundamental
               as healthcare in the digital age.
             </p>
@@ -37,7 +47,7 @@ export default function AboutPage() {
         </div>
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 60" fill="none" className="w-full block" preserveAspectRatio="none">
-            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#F8FAFC" />
+            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#0B1F2E" />
           </svg>
         </div>
       </section>

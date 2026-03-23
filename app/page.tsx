@@ -1,4 +1,19 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
+  description:
+    "Intelligent cybersecurity solutions with kernel-level defense systems. Penetration testing, VAPT, and security audits for Indian enterprises.",
+  openGraph: {
+    title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
+    description:
+      "Kernel-level defense systems that adapt, learn, and respond in real time.",
+    url: "https://sentrahexct.in",
+    type: "website",
+  },
+  canonical: "https://sentrahexct.in",
+};
 
 export default function Home() {
   return (
@@ -71,7 +86,7 @@ export default function Home() {
         {/* Hero Bottom Curve */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 80" fill="none" className="w-full" preserveAspectRatio="none">
-            <path d="M0 80V40C360 0 720 0 1080 40C1260 60 1380 72 1440 76V80H0Z" fill="#F8FAFC" />
+            <path d="M0 80V40C360 0 720 0 1080 40C1260 60 1380 72 1440 76V80H0Z" fill="#0B1F2E" />
           </svg>
         </div>
       </section>

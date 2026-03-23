@@ -2,19 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services  SentraHex CyberTech",
+  title: "Cybersecurity Services | SentraHex CyberTech",
   description:
-    "Explore SentraHex CyberTech's cybersecurity services: Penetration Testing (VAPT), Security Audits & Compliance, and Cybersecurity Training.",
+    "Professional cybersecurity services: Penetration Testing, VAPT, Security Audits, Compliance Consulting, and Cybersecurity Training.",
+  openGraph: {
+    title: "Cybersecurity Services | SentraHex CyberTech",
+    description:
+      "Expert cybersecurity services including penetration testing, security audits, and compliance consulting.",
+    url: "https://sentrahexct.in/services",
+    type: "website",
+  },
+  canonical: "https://sentrahexct.in/services",
 };
 
 export default function ServicesPage() {
   return (
     <>
       {/* ── Hero ──────────────────────────────────── */}
-      <section className="relative hero-gradient overflow-hidden pt-32 pb-24">
+      <section className="relative hero-gradient overflow-hidden pt-32 pb-24 min-h-[70vh] flex items-center">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-accent-cyan/5 blur-3xl" />
-          <div className="absolute bottom-0 right-10 w-72 h-72 rounded-full bg-accent-green/5 blur-3xl" />
+          <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-accent-cyan/5 blur-3xl animate-float" />
+          <div className="absolute bottom-0 right-10 w-72 h-72 rounded-full bg-accent-green/5 blur-3xl animate-float delay-300" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-white/[0.04]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-white/[0.04]" />
           <div className="absolute inset-0" style={{
             backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0)`,
             backgroundSize: '40px 40px'
@@ -22,15 +32,15 @@ export default function ServicesPage() {
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-6">
           <div className="max-w-3xl">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-accent-cyan mb-4">
+            <span className="animate-fade-in-up inline-block text-xs font-semibold uppercase tracking-[0.2em] text-accent-cyan mb-4" style={{ animationFillMode: 'backwards' }}>
               Our Services
             </span>
-            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight">
+            <h1 className="animate-fade-in-up delay-100 text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight" style={{ animationFillMode: 'backwards' }}>
               Comprehensive Cyber
               <br />
               <span className="gradient-text">Protection Suite</span>
             </h1>
-            <p className="mt-6 text-lg text-white/60 max-w-xl leading-relaxed">
+            <p className="animate-fade-in-up delay-200 mt-6 text-lg text-white/60 max-w-xl leading-relaxed" style={{ animationFillMode: 'backwards' }}>
               End-to-end cybersecurity services designed for Indian businesses  from
               vulnerability assessments to compliance consulting and team training.
             </p>
@@ -38,7 +48,7 @@ export default function ServicesPage() {
         </div>
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 60" fill="none" className="w-full">
-            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#F8FAFC" />
+            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#0B1F2E" />
           </svg>
         </div>
       </section>

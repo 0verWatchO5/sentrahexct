@@ -57,22 +57,58 @@ export default function ServiceRequestPage() {
   };
 
   return (
-    <section className="section-padding bg-background pt-32">
-      <div className="mx-auto max-w-4xl">
-        <div className="text-center mb-10">
-          <span className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-accent-cyan mb-3">
+    <>
+      <section className="relative hero-gradient overflow-hidden pt-32 pb-24 -mb-px min-h-[70vh] flex items-center">
+        <div className="absolute inset-0">
+          <div className="absolute top-20 right-20 w-96 h-96 rounded-full bg-accent-cyan/5 blur-3xl animate-float" />
+          <div className="absolute bottom-0 left-10 w-72 h-72 rounded-full bg-accent-green/5 blur-3xl animate-float delay-300" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-white/[0.04]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-white/[0.04]" />
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0)",
+              backgroundSize: "40px 40px",
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 text-center">
+          <span
+            className="animate-fade-in-up inline-block text-xs font-semibold uppercase tracking-[0.2em] text-accent-cyan mb-4"
+            style={{ animationFillMode: "backwards" }}
+          >
             Service Request
           </span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-text-primary">
-            Request A Security Engagement
+          <h1
+            className="animate-fade-in-up delay-100 text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight"
+            style={{ animationFillMode: "backwards" }}
+          >
+            Request A Security
+            <br />
+            <span className="gradient-text">Engagement</span>
           </h1>
-          <p className="mt-4 text-text-secondary max-w-2xl mx-auto">
+          <p
+            className="animate-fade-in-up delay-200 mt-6 text-lg text-white/60 max-w-2xl mx-auto leading-relaxed"
+            style={{ animationFillMode: "backwards" }}
+          >
             Tell us your scope and timeline. Your request enters our workflow with
             status tracking from submitted to closed.
           </p>
         </div>
 
-        <div className="rounded-2xl border border-border bg-surface p-8 sm:p-10">
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1440 60" fill="none" className="w-full block" preserveAspectRatio="none">
+            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#0B1F2E" />
+          </svg>
+        </div>
+      </section>
+
+      <section className="section-padding bg-background relative z-10">
+        <div className="mx-auto max-w-4xl">
+
+          <div className="rounded-2xl border border-border bg-surface p-8 sm:p-10">
           {submittedId ? (
             <div className="rounded-xl border border-accent-green/30 bg-accent-green/5 p-4 mb-6 text-sm text-text-primary">
               Request submitted successfully. Reference ID: <strong>{submittedId}</strong>
@@ -206,8 +242,9 @@ export default function ServiceRequestPage() {
               {loading ? "Submitting..." : "Submit Service Request"}
             </button>
           </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

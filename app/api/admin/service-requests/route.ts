@@ -69,3 +69,41 @@ export async function PATCH(request: Request) {
     );
   }
 }
+
+export async function DELETE(request: Request) {
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session?.user) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
+    const body = await request.json();
+    const id = String(body?.id || "").trim();
+
+    if (!id) {
+      return NextResponse.json(
+        { error: "Invalid service request id." },
+        { status: 400 },
+      );
+    }
+
+    const db = await getDb();
+    const result = await db
+      .collection("serviceRequests")
+      .deleteOne({ _id: new ObjectId(id) });
+
+    if (!result.deletedCount) {
+      return NextResponse.json(
+        { error: "Service request not found." },
+        { status: 404 },
+      );
+    }
+
+    return NextResponse.json({ ok: true });
+  } catch {
+    return NextResponse.json(
+      { error: "Unable to delete service request." },
+      { status: 500 },
+    );
+  }
+}

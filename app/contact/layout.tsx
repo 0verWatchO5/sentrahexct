@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact  SentraHex CyberTech",
+  title: "Contact Us | SentraHex CyberTech",
   description:
-    "Get in touch with SentraHex CyberTech for penetration testing, security audits, compliance consulting, and cybersecurity training services.",
+    "Get in touch with SentraHex CyberTech for cybersecurity services, penetration testing, security audits, and compliance consulting.",
+  openGraph: {
+    title: "Contact Us | SentraHex CyberTech",
+    description: "Reach out to our cybersecurity experts for a consultation.",
+    url: "https://sentrahexct.in/contact",
+    type: "website",
+  },
+  canonical: "https://sentrahexct.in/contact",
 };
 
 export default function ContactLayout({

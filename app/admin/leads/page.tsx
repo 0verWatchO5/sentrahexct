@@ -108,6 +108,46 @@ export default function AdminLeadsPage() {
     }
   };
 
+  const deleteLead = async (id: string) => {
+    const confirmed = window.confirm("Delete this lead permanently?");
+    if (!confirmed) {
+      return;
+    }
+
+    const res = await fetch("/api/admin/leads", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id }),
+    });
+
+    if (res.ok) {
+      setLeads((prev) => prev.filter((item) => item._id !== id));
+      return;
+    }
+
+    setError("Unable to delete lead.");
+  };
+
+  const deleteServiceRequest = async (id: string) => {
+    const confirmed = window.confirm("Delete this service request permanently?");
+    if (!confirmed) {
+      return;
+    }
+
+    const res = await fetch("/api/admin/service-requests", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id }),
+    });
+
+    if (res.ok) {
+      setServiceRequests((prev) => prev.filter((item) => item._id !== id));
+      return;
+    }
+
+    setError("Unable to delete service request.");
+  };
+
   return (
     <section className="section-padding bg-background pt-32">
       <div className="mx-auto max-w-7xl">
@@ -159,12 +199,13 @@ export default function AdminLeadsPage() {
                       <th className="px-4 py-3">Subject</th>
                       <th className="px-4 py-3">Status</th>
                       <th className="px-4 py-3">Created</th>
+                      <th className="px-4 py-3">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     {leads.length === 0 ? (
                       <tr>
-                        <td className="px-4 py-6 text-text-muted" colSpan={5}>
+                        <td className="px-4 py-6 text-text-muted" colSpan={6}>
                           No leads yet.
                         </td>
                       </tr>
@@ -193,6 +234,14 @@ export default function AdminLeadsPage() {
                           <td className="px-4 py-3 text-text-muted">
                             {new Date(lead.createdAt).toLocaleString()}
                           </td>
+                          <td className="px-4 py-3">
+                            <button
+                              onClick={() => void deleteLead(lead._id)}
+                              className="rounded-lg border border-red-300 bg-red-50 px-3 py-1.5 text-red-700 hover:bg-red-100"
+                            >
+                              Delete
+                            </button>
+                          </td>
                         </tr>
                       ))
                     )}
@@ -214,12 +263,13 @@ export default function AdminLeadsPage() {
                       <th className="px-4 py-3">Service</th>
                       <th className="px-4 py-3">Status</th>
                       <th className="px-4 py-3">Created</th>
+                      <th className="px-4 py-3">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     {serviceRequests.length === 0 ? (
                       <tr>
-                        <td className="px-4 py-6 text-text-muted" colSpan={5}>
+                        <td className="px-4 py-6 text-text-muted" colSpan={6}>
                           No service requests yet.
                         </td>
                       </tr>
@@ -250,6 +300,14 @@ export default function AdminLeadsPage() {
                           </td>
                           <td className="px-4 py-3 text-text-muted">
                             {new Date(request.createdAt).toLocaleString()}
+                          </td>
+                          <td className="px-4 py-3">
+                            <button
+                              onClick={() => void deleteServiceRequest(request._id)}
+                              className="rounded-lg border border-red-300 bg-red-50 px-3 py-1.5 text-red-700 hover:bg-red-100"
+                            >
+                              Delete
+                            </button>
                           </td>
                         </tr>
                       ))

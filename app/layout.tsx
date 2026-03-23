@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SentraHex CyberTech  Intelligent Cybersecurity Solutions",
+  title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
   description:
     "SentraHex CyberTech is an Indian cybersecurity company building intelligent, kernel-level defense systems that adapt, learn, and respond in real time.",
   keywords: [
@@ -22,6 +22,34 @@ export const metadata: Metadata = {
     "India",
     "SentraHex",
   ],
+  metadataBase: new URL("https://sentrahexct.in"),
+  alternates: {
+    canonical: "https://sentrahexct.in",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://sentrahexct.in",
+    siteName: "SentraHex CyberTech",
+    title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
+    description:
+      "SentraHex CyberTech is an Indian cybersecurity company building intelligent, kernel-level defense systems that adapt, learn, and respond in real time.",
+    images: [
+      {
+        url: "https://sentrahexct.in/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SentraHex CyberTech",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
+    description:
+      "Intelligent cybersecurity solutions that adapt, learn, and respond in real time.",
+    images: ["https://sentrahexct.in/twitter-image.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -29,8 +57,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "SentraHex CyberTech",
+    description:
+      "Intelligent cybersecurity solutions built on kernel-level defense systems",
+    url: "https://sentrahexct.in",
+    logo: "https://sentrahexct.in/logo.png",
+    foundingDate: "2024",
+    areaServed: "IN",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "Customer Service",
+      url: "https://sentrahexct.in/contact",
+    },
+    sameAs: [
+      "https://twitter.com/sentrahexct",
+      "https://linkedin.com/company/sentrahexct",
+    ],
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </head>
       <body className={`${inter.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
