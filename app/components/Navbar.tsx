@@ -34,11 +34,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-accent-cyan to-accent-green shadow-lg transition-transform duration-300 group-hover:scale-105">
-            <svg viewBox="0 0 24 24" className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 2L3 7v6c0 5.25 3.83 10.13 9 11.25C17.17 23.13 21 18.25 21 13V7l-9-5z" />
-            </svg>
-          </div>
+          <img src="/favicon.ico" alt="SentraHex logo" className="h-10 w-10 object-contain transition-transform duration-300 group-hover:scale-105" />
           <div className="flex flex-col leading-none">
             <span className={`text-lg font-bold tracking-tight transition-colors duration-300 ${
               scrolled ? "text-text-primary" : "text-white"
