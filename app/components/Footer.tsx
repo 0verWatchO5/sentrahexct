@@ -42,7 +42,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed text-white/60 max-w-xs">
-              Redefining digital defense with intelligent, adaptive security systems.
+              Delivering practical digital security with focused, adaptive services.
               Rooted in India, built for the world.
             </p>
             {/* Social Icons */}

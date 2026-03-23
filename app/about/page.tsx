@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us | SentraHex CyberTech",
   description:
-    "Learn about SentraHex CyberTech's mission to redefine cybersecurity from India with intelligent, adaptive defense systems.",
+    "Learn about SentraHex CyberTech's mission to deliver practical cybersecurity services from India.",
   openGraph: {
     title: "About Us | SentraHex CyberTech",
     description:
-      "Discover our mission: redefining cybersecurity from India with adaptive defense systems.",
+      "Discover our mission: practical cybersecurity services built from India.",
     url: "https://sentrahexct.in/about",
     type: "website",
   },
@@ -75,8 +75,8 @@ export default function AboutPage() {
                 </p>
                 <p>
                   In a world where cyber threats are rapidly evolving, we&apos;re building
-                  intelligent, adaptive defense systems that don&apos;t just detect
-                  they adapt, learn, and respond in real time.
+                  practical security capabilities that identify risk early,
+                  strengthen defenses, and support faster response.
                 </p>
                 <p>
                   We believe cybersecurity shouldn&apos;t be reactive, complicated, or reserved
@@ -90,7 +90,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   While we begin with cybersecurity as our core, our vision expands far
-                  beyond  into a future where intelligent, evolving systems secure not just
+                  beyond  into a future where reliable, evolving solutions secure not just
                   individuals but the entire digital ecosystem.
                 </p>
               </div>
@@ -181,7 +181,7 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-bold text-text-primary mb-4">Our Vision</h3>
                 <p className="text-text-secondary leading-relaxed text-lg">
                   To ignite a cybersecurity-first mindset across India by making defense intuitive,
-                  intelligent, and deeply integrated  laying the foundation for a safer digital
+                  practical, and deeply integrated  laying the foundation for a safer digital
                   future powered by evolving technology.
                 </p>
               </div>
@@ -211,7 +211,7 @@ export default function AboutPage() {
                   </svg>
                 ),
                 title: "Innovation",
-                desc: "Pushing boundaries with intelligent security and adaptive defense.",
+                desc: "Pushing boundaries with practical security and adaptive defense.",
               },
               {
                 icon: (
@@ -270,7 +270,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
             India has always been a land of innovation and resilience. We carry that spirit
-            into everything we build  from our intelligent defense algorithms to our
+            into everything we build  from our practical security approach to our
             commitment to making cybersecurity accessible to every Indian citizen. Our
             solutions are designed to protect digital sovereignty and establish a new
             benchmark for digital safety.

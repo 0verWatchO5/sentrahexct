@@ -2,13 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
+  title: "SentraHex CyberTech | Cybersecurity Services",
   description:
-    "Intelligent cybersecurity solutions with adaptive defense systems. Penetration testing, VAPT, and security audits for Indian enterprises.",
+    "Cybersecurity services including penetration testing, audits, training, and website security for Indian enterprises.",
   openGraph: {
-    title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
+    title: "SentraHex CyberTech | Cybersecurity Services",
     description:
-      "Adaptive defense systems that learn and respond in real time.",
+      "Practical cybersecurity services for prevention, assessment, and response.",
     url: "https://sentrahexct.in",
     type: "website",
   },
@@ -45,15 +45,15 @@ export default function Home() {
               </div>
 
               <h1 className="animate-fade-in-up delay-100 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ animationFillMode: 'backwards' }}>
-                Intelligent Defense
+                Practical Security
                 <br />
                 <span className="gradient-text">for the Digital Age</span>
               </h1>
 
               <p className="animate-fade-in-up delay-200 mt-8 max-w-lg text-base sm:text-lg leading-relaxed text-white/60" style={{ animationFillMode: 'backwards' }}>
-                We build adaptive defense systems that don&apos;t just detect threats
-                they adapt, learn, and respond in real time. Cybersecurity made personal,
-                proactive, and deeply embedded.
+                We provide focused cybersecurity services to identify risk, strengthen
+                your controls, and improve response readiness. Cybersecurity made practical,
+                proactive, and accessible.
               </p>
 
               <div className="animate-fade-in-up delay-300 mt-10 flex flex-wrap gap-4" style={{ animationFillMode: 'backwards' }}>
@@ -203,17 +203,17 @@ export default function Home() {
                 <span className="gradient-text">With Every Threat</span>
               </h2>
               <p className="text-text-secondary leading-relaxed mb-8">
-                In a world where cyber threats are rapidly evolving, we&apos;re building intelligent,
-                adaptive defense systems that don&apos;t just detect  they adapt, learn, and
-                respond in real time. We believe cybersecurity should be personal, proactive, and
+                In a world where cyber threats are rapidly evolving, we help organizations
+                identify vulnerabilities, improve security posture, and respond faster.
+                We believe cybersecurity should be personal, proactive, and
                 as fundamental as healthcare in the digital age.
               </p>
 
               <div className="space-y-6">
                 {[
                   {
-                    title: "Adaptive Intelligence",
-                    desc: "Our systems learn from every interaction, continuously strengthening your defenses.",
+                    title: "Practical Expertise",
+                    desc: "Our team applies proven security practices tailored to your real-world environment.",
                   },
                   {
                     title: "Proactive Defense",
@@ -315,7 +315,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-text-primary mb-4">Our Vision</h3>
                 <p className="text-text-secondary leading-relaxed">
                   To ignite a cybersecurity-first mindset across India by making defense intuitive,
-                  intelligent, and deeply integrated  laying the foundation for a safer digital
+                  practical, and deeply integrated  laying the foundation for a safer digital
                   future powered by evolving technology.
                 </p>
               </div>

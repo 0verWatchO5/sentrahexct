@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
+  title: "SentraHex CyberTech | Cybersecurity Services",
   description:
-    "SentraHex CyberTech is an Indian cybersecurity company building intelligent, adaptive defense systems that learn and respond in real time.",
+    "SentraHex CyberTech is an Indian cybersecurity company delivering practical cybersecurity services for modern businesses.",
   keywords: [
     "cybersecurity",
     "penetration testing",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://sentrahexct.in",
     siteName: "SentraHex CyberTech",
-    title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
+    title: "SentraHex CyberTech | Cybersecurity Services",
     description:
-      "SentraHex CyberTech is an Indian cybersecurity company building intelligent, adaptive defense systems that learn and respond in real time.",
+      "SentraHex CyberTech is an Indian cybersecurity company delivering practical cybersecurity services for modern businesses.",
     images: [
       {
         url: "https://sentrahexct.in/og-image.jpg",
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
+    title: "SentraHex CyberTech | Cybersecurity Services",
     description:
-      "Intelligent cybersecurity solutions that adapt, learn, and respond in real time.",
+      "Practical cybersecurity services for prevention, assessment, and response.",
     images: ["https://sentrahexct.in/twitter-image.jpg"],
   },
 };
@@ -62,7 +62,7 @@ export default function RootLayout({
     "@type": "Organization",
     name: "SentraHex CyberTech",
     description:
-      "Intelligent cybersecurity solutions built on adaptive defense systems",
+      "Practical cybersecurity services for businesses and teams",
     url: "https://sentrahexct.in",
     logo: "https://sentrahexct.in/logo.png",
     foundingDate: "2024",
