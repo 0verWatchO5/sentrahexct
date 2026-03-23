@@ -9,7 +9,6 @@ export default function Footer() {
     { href: "/services", label: "Services" },
     { href: "/contact", label: "Contact" },
     { href: "/services/request", label: "Service Request" },
-    { href: "/admin/leads", label: "Admin Dashboard" },
   ];
 
   const services = [
