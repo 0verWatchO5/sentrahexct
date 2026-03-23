@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us | SentraHex CyberTech",
   description:
-    "Learn about SentraHex CyberTech's mission to redefine cybersecurity from India with intelligent, kernel-level defense systems.",
+    "Learn about SentraHex CyberTech's mission to redefine cybersecurity from India with intelligent, adaptive defense systems.",
   openGraph: {
     title: "About Us | SentraHex CyberTech",
     description:
-      "Discover our mission: redefining cybersecurity from India with kernel-level defense systems.",
+      "Discover our mission: redefining cybersecurity from India with adaptive defense systems.",
     url: "https://sentrahexct.in/about",
     type: "website",
   },
@@ -47,7 +47,7 @@ export default function AboutPage() {
         </div>
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 60" fill="none" className="w-full block" preserveAspectRatio="none">
-            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#0B1F2E" />
+            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#F8FAFC" />
           </svg>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   In a world where cyber threats are rapidly evolving, we&apos;re building
-                  intelligent, kernel-level defense systems that don&apos;t just detect
+                  intelligent, adaptive defense systems that don&apos;t just detect
                   they adapt, learn, and respond in real time.
                 </p>
                 <p>
@@ -118,7 +118,7 @@ export default function AboutPage() {
                   </div>
                   {/* Corner badges */}
                   <div className="absolute top-6 left-6 rounded-lg bg-accent-cyan/10 px-3 py-1.5 text-xs font-semibold text-accent-cyan">
-                    Kernel-Level
+                    Adaptive
                   </div>
                   <div className="absolute bottom-6 right-6 rounded-lg bg-accent-green/10 px-3 py-1.5 text-xs font-semibold text-accent-green">
                     Real-Time
@@ -209,7 +209,7 @@ export default function AboutPage() {
                   </svg>
                 ),
                 title: "Innovation",
-                desc: "Pushing boundaries with kernel-level intelligence and adaptive defense.",
+                desc: "Pushing boundaries with intelligent security and adaptive defense.",
               },
               {
                 icon: (

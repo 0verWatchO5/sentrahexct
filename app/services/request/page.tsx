@@ -100,7 +100,7 @@ export default function ServiceRequestPage() {
 
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 60" fill="none" className="w-full block" preserveAspectRatio="none">
-            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#0B1F2E" />
+            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#F8FAFC" />
           </svg>
         </div>
       </section>
@@ -177,6 +177,7 @@ export default function ServiceRequestPage() {
                   <option value="vapt">Penetration Testing (VAPT)</option>
                   <option value="audit">Security Audit and Compliance</option>
                   <option value="training">Cybersecurity Training</option>
+                  <option value="website-development">Website Design and Development</option>
                   <option value="managed-soc">Managed SOC</option>
                 </select>
               </div>

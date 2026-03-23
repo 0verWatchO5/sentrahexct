@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
   description:
-    "Intelligent cybersecurity solutions with kernel-level defense systems. Penetration testing, VAPT, and security audits for Indian enterprises.",
+    "Intelligent cybersecurity solutions with adaptive defense systems. Penetration testing, VAPT, and security audits for Indian enterprises.",
   openGraph: {
     title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
     description:
-      "Kernel-level defense systems that adapt, learn, and respond in real time.",
+      "Adaptive defense systems that learn and respond in real time.",
     url: "https://sentrahexct.in",
     type: "website",
   },
@@ -49,7 +49,7 @@ export default function Home() {
               </h1>
 
               <p className="animate-fade-in-up delay-200 mt-8 max-w-lg text-base sm:text-lg leading-relaxed text-white/60" style={{ animationFillMode: 'backwards' }}>
-                We build kernel-level defense systems that don&apos;t just detect threats
+                We build adaptive defense systems that don&apos;t just detect threats
                 they adapt, learn, and respond in real time. Cybersecurity made personal,
                 proactive, and deeply embedded.
               </p>
@@ -86,7 +86,7 @@ export default function Home() {
         {/* Hero Bottom Curve */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 80" fill="none" className="w-full" preserveAspectRatio="none">
-            <path d="M0 80V40C360 0 720 0 1080 40C1260 60 1380 72 1440 76V80H0Z" fill="#0B1F2E" />
+            <path d="M0 80V40C360 0 720 0 1080 40C1260 60 1380 72 1440 76V80H0Z" fill="#F8FAFC" />
           </svg>
         </div>
       </section>
@@ -144,6 +144,21 @@ export default function Home() {
                   "Hands-on workshops in ethical hacking, CEH certification, and cybersecurity awareness for teams of any size.",
                 href: "/services#training",
               },
+              {
+                icon: (
+                  <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79V6a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 6h.01M12 6h.01" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 18l3 3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 21a4.5 4.5 0 100-9 4.5 4.5 0 000 9z" />
+                  </svg>
+                ),
+                title: "Website Solutions",
+                description:
+                  "Secure website design and development with performance, reliability, and security-first engineering.",
+                href: "/services#websites",
+              },
             ].map((service, i) => (
               <Link
                 key={service.title}
@@ -187,7 +202,7 @@ export default function Home() {
               </h2>
               <p className="text-text-secondary leading-relaxed mb-8">
                 In a world where cyber threats are rapidly evolving, we&apos;re building intelligent,
-                kernel-level defense systems that don&apos;t just detect  they adapt, learn, and
+                adaptive defense systems that don&apos;t just detect  they adapt, learn, and
                 respond in real time. We believe cybersecurity should be personal, proactive, and
                 as fundamental as healthcare in the digital age.
               </p>

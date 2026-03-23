@@ -16,6 +16,7 @@ export default function Footer() {
     { href: "/services#vapt", label: "Penetration Testing" },
     { href: "/services#audits", label: "Security Audits" },
     { href: "/services#training", label: "Cyber Training" },
+    { href: "/services#websites", label: "Website Solutions" },
   ];
 
   return (
@@ -41,7 +42,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed text-white/60 max-w-xs">
-              Redefining digital defense with intelligent, kernel-level security systems.
+              Redefining digital defense with intelligent, adaptive security systems.
               Rooted in India, built for the world.
             </p>
             {/* Social Icons */}

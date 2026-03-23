@@ -161,7 +161,7 @@ export default function AdminLeadsPage() {
           </p>
           <button
             onClick={() => void signOut({ callbackUrl: "/admin/login" })}
-            className="btn-outline mt-5"
+            className="btn-outline mt-5 !text-text-primary"
           >
             Sign Out
           </button>
@@ -175,7 +175,7 @@ export default function AdminLeadsPage() {
         </div>
 
         {error ? (
-          <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700 mb-6">
+          <div className="rounded-xl border border-red-400/40 bg-red-500/10 p-4 text-sm text-red-200 mb-6">
             {error}
           </div>
         ) : null}
@@ -224,7 +224,7 @@ export default function AdminLeadsPage() {
                                   e.target.value as Lead["status"],
                                 )
                               }
-                              className="rounded-lg border border-border bg-white px-3 py-1.5"
+                              className="rounded-lg border border-border bg-surface-alt px-3 py-1.5 text-text-primary"
                             >
                               <option value="new">new</option>
                               <option value="in-progress">in-progress</option>
@@ -237,7 +237,7 @@ export default function AdminLeadsPage() {
                           <td className="px-4 py-3">
                             <button
                               onClick={() => void deleteLead(lead._id)}
-                              className="rounded-lg border border-red-300 bg-red-50 px-3 py-1.5 text-red-700 hover:bg-red-100"
+                              className="rounded-lg border border-red-400/40 bg-red-500/10 px-3 py-1.5 text-red-200 hover:bg-red-500/20"
                             >
                               Delete
                             </button>
@@ -288,7 +288,7 @@ export default function AdminLeadsPage() {
                                   e.target.value as ServiceRequest["status"],
                                 )
                               }
-                              className="rounded-lg border border-border bg-white px-3 py-1.5"
+                              className="rounded-lg border border-border bg-surface-alt px-3 py-1.5 text-text-primary"
                             >
                               <option value="submitted">submitted</option>
                               <option value="reviewing">reviewing</option>
@@ -304,7 +304,7 @@ export default function AdminLeadsPage() {
                           <td className="px-4 py-3">
                             <button
                               onClick={() => void deleteServiceRequest(request._id)}
-                              className="rounded-lg border border-red-300 bg-red-50 px-3 py-1.5 text-red-700 hover:bg-red-100"
+                              className="rounded-lg border border-red-400/40 bg-red-500/10 px-3 py-1.5 text-red-200 hover:bg-red-500/20"
                             >
                               Delete
                             </button>

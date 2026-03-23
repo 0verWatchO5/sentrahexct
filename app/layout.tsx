@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
   description:
-    "SentraHex CyberTech is an Indian cybersecurity company building intelligent, kernel-level defense systems that adapt, learn, and respond in real time.",
+    "SentraHex CyberTech is an Indian cybersecurity company building intelligent, adaptive defense systems that learn and respond in real time.",
   keywords: [
     "cybersecurity",
     "penetration testing",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "SentraHex CyberTech",
     title: "SentraHex CyberTech | Intelligent Cybersecurity Solutions",
     description:
-      "SentraHex CyberTech is an Indian cybersecurity company building intelligent, kernel-level defense systems that adapt, learn, and respond in real time.",
+      "SentraHex CyberTech is an Indian cybersecurity company building intelligent, adaptive defense systems that learn and respond in real time.",
     images: [
       {
         url: "https://sentrahexct.in/og-image.jpg",
@@ -62,7 +62,7 @@ export default function RootLayout({
     "@type": "Organization",
     name: "SentraHex CyberTech",
     description:
-      "Intelligent cybersecurity solutions built on kernel-level defense systems",
+      "Intelligent cybersecurity solutions built on adaptive defense systems",
     url: "https://sentrahexct.in",
     logo: "https://sentrahexct.in/logo.png",
     foundingDate: "2024",

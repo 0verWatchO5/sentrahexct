@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Cybersecurity Services | SentraHex CyberTech",
   description:
-    "Professional cybersecurity services: Penetration Testing, VAPT, Security Audits, Compliance Consulting, and Cybersecurity Training.",
+    "Professional services: Penetration Testing, VAPT, Security Audits, Compliance Consulting, Cybersecurity Training, and Website Solutions.",
   openGraph: {
     title: "Cybersecurity Services | SentraHex CyberTech",
     description:
@@ -42,13 +42,13 @@ export default function ServicesPage() {
             </h1>
             <p className="animate-fade-in-up delay-200 mt-6 text-lg text-white/60 max-w-xl leading-relaxed" style={{ animationFillMode: 'backwards' }}>
               End-to-end cybersecurity services designed for Indian businesses  from
-              vulnerability assessments to compliance consulting and team training.
+              vulnerability assessments to compliance consulting, team training, and website solutions.
             </p>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 60" fill="none" className="w-full">
-            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#0B1F2E" />
+            <path d="M0 60V30C360 0 720 0 1080 30C1260 45 1380 53 1440 56V60H0Z" fill="#F8FAFC" />
           </svg>
         </div>
       </section>
@@ -274,6 +274,84 @@ export default function ServicesPage() {
                   ].map((item) => (
                     <div key={item.label} className="rounded-xl bg-surface-alt p-3 text-center">
                       <div className="text-lg mb-1">{item.icon}</div>
+                      <div className="text-[11px] text-text-muted">{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr className="border-border" />
+
+          {/* ── 4. Website Solutions ─────────────── */}
+          <div id="websites" className="scroll-mt-24 grid gap-12 items-center lg:grid-cols-2">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-accent-green/20 bg-accent-green/5 px-4 py-1.5 mb-5">
+                <span className="h-2 w-2 rounded-full bg-accent-green" />
+                <span className="text-xs font-medium text-accent-green">Service 04</span>
+              </div>
+              <h2 className="text-3xl font-bold text-text-primary sm:text-4xl mb-5">
+                Website
+                <br />
+                <span className="gradient-text">Design & Development</span>
+              </h2>
+              <p className="text-text-secondary leading-relaxed mb-6">
+                We build modern, high-performance websites tailored for your business goals.
+                Every build emphasizes speed, responsive UX, and security-first best practices.
+              </p>
+              <div className="space-y-4 mb-8">
+                {[
+                  "Business Websites and Landing Pages",
+                  "Responsive UI for Mobile, Tablet, and Desktop",
+                  "Performance Optimization and Core Web Vitals",
+                  "SEO-Friendly Structure and Technical Setup",
+                  "Secure Forms, Deployment, and Ongoing Maintenance",
+                  "CMS or Custom Stack Based on Your Needs",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <div className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent-green/10">
+                      <svg className="h-3 w-3 text-accent-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-sm text-text-secondary">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <Link href="/contact" className="btn-primary">
+                Start Your Website Project
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+              <Link href="/services/request" className="btn-outline ml-3">
+                Start Service Request
+              </Link>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-surface p-8 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-accent-green/5 to-transparent rounded-bl-full" />
+              <div className="relative flex flex-col items-center text-center py-8">
+                <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-accent-green/10 to-accent-cyan/10 animate-glow-pulse">
+                  <svg className="h-12 w-12 text-accent-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79V6a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 6h.01M12 6h.01" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 18l3 3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 21a4.5 4.5 0 100-9 4.5 4.5 0 000 9z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-text-primary mb-2">Website Solutions</h3>
+                <p className="text-sm text-text-muted mb-6">Design, Build & Scale</p>
+                <div className="grid grid-cols-2 gap-3 w-full max-w-xs">
+                  {[
+                    { label: "Responsive" },
+                    { label: "SEO-Ready" },
+                    { label: "Fast" },
+                    { label: "Secure" },
+                  ].map((item) => (
+                    <div key={item.label} className="rounded-xl bg-surface-alt p-3 text-center">
                       <div className="text-[11px] text-text-muted">{item.label}</div>
                     </div>
                   ))}
