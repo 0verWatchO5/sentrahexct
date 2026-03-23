@@ -15,7 +15,7 @@ export default function Footer() {
   const services = [
     { href: "/services#vapt", label: "Penetration Testing" },
     { href: "/services#audits", label: "Security Audits" },
-    { href: "/services#training", label: "Cyber Training" },
+    // { href: "/services#training", label: "Cyber Training" },
     { href: "/services#websites", label: "Website Solutions" },
   ];
 

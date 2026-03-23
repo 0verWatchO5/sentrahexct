@@ -233,7 +233,7 @@ export default function ContactPage() {
                         <option value="" disabled>Select a service</option>
                         <option value="vapt">Penetration Testing (VAPT)</option>
                         <option value="audit">Security Audit & Compliance</option>
-                        <option value="training">Cybersecurity Training</option>
+                        {/* <option value="training">Cybersecurity Training</option> */}
                         <option value="websites">Website Design & Development</option>
                         <option value="general">General Inquiry</option>
                       </select>
@@ -295,10 +295,10 @@ export default function ContactPage() {
                 q: "What compliance frameworks do you support?",
                 a: "We provide readiness assessments for ISO 27001, DPDPA, SOC 2, GDPR, HIPAA, and other industry-specific standards relevant to your business.",
               },
-              {
-                q: "Can training be delivered online?",
-                a: "Yes. We offer both in-person and virtual training sessions with hands-on labs and interactive exercises, making it accessible for distributed teams across India.",
-              },
+              // {
+              //   q: "Can training be delivered online?",
+              //   a: "Yes. We offer both in-person and virtual training sessions with hands-on labs and interactive exercises, making it accessible for distributed teams across India.",
+              // },
             ].map((faq, i) => (
               <div key={i} className="rounded-xl border border-border bg-surface p-6 card-hover">
                 <h3 className="text-base font-semibold text-text-primary mb-2">{faq.q}</h3>

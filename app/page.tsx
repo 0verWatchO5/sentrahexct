@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "SentraHex CyberTech | Cybersecurity Services",
   description:
-    "Cybersecurity services including penetration testing, audits, training, and website security for Indian enterprises.",
+    "Cybersecurity services including penetration testing, audits, and website security for Indian enterprises.",
   openGraph: {
     title: "SentraHex CyberTech | Cybersecurity Services",
     description:
@@ -134,18 +134,18 @@ export default function Home() {
                   "Comprehensive ISO 27001 and DPDPA readiness assessments to ensure your organization meets compliance standards.",
                 href: "/services#audits",
               },
-              {
-                icon: (
-                  <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                  </svg>
-                ),
-                title: "Cyber Training",
-                description:
-                  "Hands-on workshops in ethical hacking, CEH certification, and cybersecurity awareness for teams of any size.",
-                href: "/services#training",
-              },
+              // {
+              //   icon: (
+              //     <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+              //       <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+              //       <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              //     </svg>
+              //   ),
+              //   title: "Cyber Training",
+              //   description:
+              //     "Hands-on workshops in ethical hacking, CEH certification, and cybersecurity awareness for teams of any size.",
+              //   href: "/services#training",
+              // },
               {
                 icon: (
                   <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">

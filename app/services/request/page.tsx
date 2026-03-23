@@ -176,7 +176,7 @@ export default function ServiceRequestPage() {
                   <option value="" disabled>Select service</option>
                   <option value="vapt">Penetration Testing (VAPT)</option>
                   <option value="audit">Security Audit and Compliance</option>
-                  <option value="training">Cybersecurity Training</option>
+                  {/* <option value="training">Cybersecurity Training</option> */}
                   <option value="website-development">Website Design and Development</option>
                   <option value="managed-soc">Managed SOC</option>
                 </select>
