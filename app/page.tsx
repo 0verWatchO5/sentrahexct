@@ -12,7 +12,9 @@ export const metadata: Metadata = {
     url: "https://sentrahexct.in",
     type: "website",
   },
-  canonical: "https://sentrahexct.in",
+  alternates: {
+    canonical: "https://sentrahexct.in",
+  },
 };
 
 export default function Home() {

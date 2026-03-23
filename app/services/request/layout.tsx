@@ -10,7 +10,9 @@ export const metadata: Metadata = {
     url: "https://sentrahexct.in/services/request",
     type: "website",
   },
-  canonical: "https://sentrahexct.in/services/request",
+  alternates: {
+    canonical: "https://sentrahexct.in/services/request",
+  },
 };
 
 export default function ServiceRequestLayout({

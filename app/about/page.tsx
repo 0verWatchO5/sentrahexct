@@ -11,7 +11,9 @@ export const metadata: Metadata = {
     url: "https://sentrahexct.in/about",
     type: "website",
   },
-  canonical: "https://sentrahexct.in/about",
+  alternates: {
+    canonical: "https://sentrahexct.in/about",
+  },
 };
 
 export default function AboutPage() {

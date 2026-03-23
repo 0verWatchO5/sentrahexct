@@ -10,7 +10,9 @@ export const metadata: Metadata = {
     url: "https://sentrahexct.in/contact",
     type: "website",
   },
-  canonical: "https://sentrahexct.in/contact",
+  alternates: {
+    canonical: "https://sentrahexct.in/contact",
+  },
 };
 
 export default function ContactLayout({
